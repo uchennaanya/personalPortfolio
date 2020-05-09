@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0;
   padding: 0;
 }
@@ -22,17 +22,54 @@ body{
   text-decoration: none;
   padding-left: 1rem;
 }
+#projects {
+  display: flex;
+  flex-direction: row;
 
-@media screen (min-width: 480px) {
-
-    div {
-        float: left;
-        background: red;
-    }
+  justify-content: center;
 }
+.project-tile {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+.project-title{
+  border-style: solid;
+  border-width: 0.05rem;
+  background-color:black;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 1rem 0 ;
+}
+
+.project-footer{
+  border-style: solid;
+  border-width: 0.05rem;
+  background-color:grey;
+  width: 100%;
+  color: black;
+  text-align: center;
+  padding: 1rem 0 ;
+  text-decoration: none;
+}
+.project-footer:hover{
+  color: white;
+  background-color: cadetblue;
+}
+
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: inline;
+}
+
 @media screen (min-width: 600px) {
-    div {
-        float: left;
-        background: red;
-    }
+  div {
+    float: left;
+    background: red;
+  }
 }
